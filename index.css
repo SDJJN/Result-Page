@@ -1,0 +1,60 @@
+body {
+    background-color: aliceblue;
+}
+#result {
+    margin-left: 10cm;
+    margin-right: 9cm;
+    margin-top: 2cm;
+    border-color: rgb(0, 0, 0);
+    border-radius: 0.5cm;
+    background-image: linear-gradient(#ce8d8d, #b8cfbd);
+    padding-left: 0.5cm;
+    padding-bottom: 0.5cm;
+    border-style:solid;
+    border-width: 0.1cm;
+}
+#heading1 {
+    margin-left: 5cm;
+    font-size: 2cm;
+}
+#firstname {
+    margin-left: 0.55cm;  
+}
+#rollno {
+    margin-left: 0.50cm;
+}
+#session {
+    margin-left: 0px;
+    background-color: aliceblue;
+    background-color: rgb(192, 176, 176);
+    font-size: 1cm;
+}
+.class1 {
+    margin-left: 1.56cm;
+}
+#firstname {
+    border-left: 20%;   
+}
+#button1 {
+    margin-left: 3cm;
+    border-radius: 0.3cm;
+    display: inline-block;
+    background-color: rgb(158, 165, 172);
+    border-color: blue;  
+}
+#submit {
+    margin-left: 5cm;
+    border-radius: 0.3cm;
+    background-color: rgb(158, 165, 172);
+    display: inline-block;
+    border-color: blue;
+}
+a:hover {
+    margin: 0px;
+    padding: 0px;
+}
+footer h6{
+    display: flex;
+    justify-content: center;   
+    font-size: 0.5cm;
+}

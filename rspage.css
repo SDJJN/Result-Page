@@ -1,0 +1,22 @@
+h1{
+    margin-left: 46%;
+}
+h2{
+  margin-left: 46%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 05px;
+  }
+  table{
+    margin-left: 34%;
+    margin-top: 10%;
+    background-color: azure;
+  }
+  body{
+    background-color: aquamarine;
+    background-image: -moz-linear-gradient(#b49e9e,#95a590,#a4dbc9);
+  }

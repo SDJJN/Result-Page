@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="./rspage.css">
+</head>
+
+<body>
+    <h1>Result !!!</h1>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        First Name::
+                    </th>
+                    <th>
+                        Last Name::
+                    </th>
+                    <th>
+                        Percentage::
+                    </th>
+                    <th>
+                        Roll No.::
+                    </th>
+                    <th>
+                        Class::
+                    </th>
+                </tr>
+            <tbody>
+                <tr>
+                    <td><span id="Fname"></span>
+                    </td>
+                    <td>
+                        <span id="Lname"></span>
+                    </td>
+                    <td>
+                        <span id="Per"></span>
+                    </td>
+                    <td>
+                        <span id="Rollno"></span>
+                    </td>
+                    <td>
+                        <span id="Class"></span>
+                    </td>
+                </tr>
+            </tbody>
+            </thead>
+        </table>
+    </div>
+    <h2>
+        Result::<span id="demo"></span>
+    </h2>
+    <script>
+        var FName = localStorage.getItem("Fname", Fname);
+        var LName = localStorage.getItem("Lname", Lname);
+        var PER = localStorage.getItem("Per", Per);
+        var ROLLNo = localStorage.getItem("Rollno", Rollno);
+        var CLass = localStorage.getItem("Class", Class);
+
+        document.getElementById('Fname').textContent = FName;
+        document.getElementById('Lname').textContent = LName;
+        document.getElementById('Per').textContent = PER;
+        document.getElementById('Rollno').textContent = ROLLNo;
+        document.getElementById('Class').textContent = CLass;
+
+        var c;
+        c = 33.6;
+        if (c < PER || c == PER) {
+            document.getElementById('demo').innerHTML = "Pass";
+        }
+        else {
+            document.getElementById('demo').innerHTML = "Fail";
+        }
+    </script>
+
+</body>
+
+</html>

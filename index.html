@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <script src="index.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <marquee direction="right" id="session">Student Result Session 2023-2024</marquee>
+    <section id="result">
+        <H1 id="heading1">
+            Result
+        </H1>
+        <form id="form" action="./resultpage.html">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Enter Your First Name">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Enter Your Last Name"><br><br>
+            <label for="per">Percentage</label>
+            <input type="text" id="per" name="per" placeholder="Enter Your Percentage">
+            <label for="rollno">Roll No</label>
+            <input type="rollno" id="rollno" name="rollno" placeholder="Enter Your Roll No."><br><br>
+            <label for="class" id="class" 1>Class</label>
+            <select id="class1" class="class1">
+                <option value=""></option>
+                <option value="10th">10TH</option>
+                <option value="12th">12TH</option>
+            </select><br><br>
+            <a href="./resultpage.html"> <button onclick="test()" id="submit">Submit</button></a>
+            <a href="www.google.com"><button type="button" id="button1">Cancel</button></a>
+        </form>
+    </section>
+    <footer>
+        <h6>
+
+            <script>
+                function test() {
+                    var Fname = document.getElementById('fname').value;
+                    var Lname = document.getElementById('lname').value;
+                    var Per = document.getElementById('per').value;
+                    var Rollno = document.getElementById('rollno').value;
+                    var Class = document.getElementById('class1').value;
+
+
+                    var Fname = localStorage.setItem("Fname", Fname);
+                    var Lname = localStorage.setItem("Lname", Lname);
+                    var Per = localStorage.setItem("Per", Per);
+                    var Rollno = localStorage.setItem("Rollno", Rollno);
+                    var CLass = localStorage.setItem("Class", Class);
+
+                    
+
+                    window.location.href="resultpage.html";
+
+                }
+
+            </script>
+            Copyright <span>&copy</span> 2023 All rights reserved.
+        </h6>
+    </footer>
+</body>
+
+</html>
